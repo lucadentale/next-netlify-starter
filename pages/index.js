@@ -3,6 +3,10 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 
 export default function Home() {
+ var messageInvoker; 
+  function invokeNative() {
+    messageInvoker.postMessage('Trigger from Javascript code');
+  }
   return (
     <div className="container">
       <Head>
@@ -15,10 +19,13 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        <a href="hera2g://app/login?param1=token&param2=altrotoken">prova</a>
+        <form>
+        <input type="button" value="Click me!" onclick={invokeNative()} />
+        </form>
       </main>
 
-      <Footer />
+      <Footer/>
     </div>
   )
 }
+
