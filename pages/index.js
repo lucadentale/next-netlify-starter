@@ -15,7 +15,7 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        <a href="hera2g://app/login?param1=token&param2=altrotoken">prova</a>
+        <a href="https://kind-thompson-41bd98.netlify.app">prova</a>
       </main>
 
       <Footer />
